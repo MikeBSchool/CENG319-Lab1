@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MichaelBurgener_CENG319_Lab1</string>
+    <string name="oncreate">onCreate exécutée</string>
+    <string name="onstart">onStart exécutée</string>
+    <string name="onstop">onStap exécutée</string>
+    <string name="ondestroy">onDestroy exécutée</string>
+    <string name="onpause">onPause exécutée</string>
+    <string name="onresume">onResume exécutée</string>
+    <string name="onrestart">onRestart exécutée</string>
+    <string name="oncreateview_top">topFragment: onCreateView exécutée</string>
+    <string name="oncreateview_bot">botFragment: OnCreateView exécutée</string>
+    <string name="onstart_top">topFragment: onStart exécutée</string>
+    <string name="onstart_bot">botFragment: onStart exécutée</string>
+</resources>

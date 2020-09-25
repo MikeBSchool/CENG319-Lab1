@@ -1,5 +1,6 @@
 package com.example.michaelburgener_ceng319_lab1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -75,10 +76,12 @@ public class top extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) {
-
+                    Intent aiAct = new Intent(getActivity(), aiActivity.class);
+                    startActivity(aiAct);
                 }
                 if (i == 1) {
-
+                    Intent vrAct = new Intent(getActivity(), vrActivity.class);
+                    startActivity(vrAct);
                 }
             }
         });
