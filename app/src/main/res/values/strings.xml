@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">MichaelBurgener_CENG319_Lab1</string>
+    <string name="aiactivity" translatable="false">AIActivity:</string>
+    <string name="vractivity" translatable="false">VRActivity:</string>
+    <string name="mainactivity" translatable="false">MainActivity:</string>
+    <string name="oncreate" translatable="false">onCreate executed</string>
+    <string name="onstart" translatable="false">onStart executed</string>
+    <string name="onstop" translatable="false">onStop executed</string>
+    <string name="ondestroy" translatable="false">onDestroy executed</string>
+    <string name="onpause" translatable="false">onPause executed</string>
+    <string name="onresume" translatable="false">onResume executed</string>
+    <string name="onrestart" translatable="false">onRestart executed</string>
+    <string name="oncreateview_top" translatable="false">topFragment: onCreateView executed</string>
+    <string name="oncreateview_bot" translatable="false">botFragment: onCreateView executed</string>
+    <string name="onstart_top" translatable="false">topFragment: onStart executed</string>
+    <string name="onstart_bot" translatable="false">botFragment: onStart executed</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

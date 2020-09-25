@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +17,8 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class bottom extends Fragment {
+
+    public TextView textView;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,9 +66,23 @@ public class bottom extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_bottom, container, false);
 
-        TextView textView = (TextView) view.findViewById(R.id.botTextView);
+        textView = (TextView) view.findViewById(R.id.botTextView);
         textView.setTextColor(Color.MAGENTA);
         textView.setBackgroundColor(Color.GRAY);
+        appendTextView(getResources().getString(R.string.mainactivity));
+        Toast.makeText(getContext(), getResources().getString(R.string.oncreateview_bot), Toast.LENGTH_SHORT).show();
         return view;
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Toast.makeText(getContext(), getResources().getString(R.string.onstart_bot),Toast.LENGTH_SHORT).show();
+    }
+
+    public void appendTextView(String s){
+        textView.append(s+"\n");
+    }
+
+
 }

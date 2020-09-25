@@ -7,17 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link top#newInstance} factory method to
+ * Use the {@link aiActivity#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class top extends Fragment {
+public class aiActivity extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,9 +24,8 @@ public class top extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public top() {
+    public aiActivity() {
         // Required empty public constructor
-
     }
 
     /**
@@ -39,11 +34,11 @@ public class top extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment top.
+     * @return A new instance of fragment aiActivity.
      */
     // TODO: Rename and change types and number of parameters
-    public static top newInstance(String param1, String param2) {
-        top fragment = new top();
+    public static aiActivity newInstance(String param1, String param2) {
+        aiActivity fragment = new aiActivity();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,25 +59,6 @@ public class top extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_top, container, false);
-        String [] listItems= {"AI Activity", "VR Activity"};
-        ListView menu = (ListView) view.findViewById(R.id.topListView);
-
-        ArrayAdapter<String> ListViewAdapter = new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1,listItems);
-        menu.setAdapter(ListViewAdapter);
-
-        menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0) {
-
-                }
-                if (i == 1) {
-
-                }
-            }
-        });
-
-        return view;
+        return inflater.inflate(R.layout.fragment_ai_activity, container, false);
     }
 }
