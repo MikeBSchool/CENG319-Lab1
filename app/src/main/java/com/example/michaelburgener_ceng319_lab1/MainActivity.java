@@ -10,5 +10,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        top topFrag = new top();
+        bottom botFrag = new bottom();
+
+        getSupportFragmentManager().beginTransaction().add(R.id.mainLayout, topFrag).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.mainLayout, botFrag).commit();
     }
 }
